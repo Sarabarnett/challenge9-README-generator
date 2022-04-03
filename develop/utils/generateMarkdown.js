@@ -14,13 +14,13 @@
 function generateMarkdown(input) {
   return `# ${input.title}
   ##Table of Contents
-  [Description] (#description)
-  [Installation] (#installation)
-  [Usage] (#useage)
-  [License] (#license)
-  [Contributions] (#contributions)
-  [Tests] (#tests)
-  [Questions] (#questions)
+  [Description](#description)
+  [Installation](#installation)
+  [Usage](#useage)
+  [License](#license)
+  [Contributions](#contributions)
+  [Tests](#tests)
+  [Questions](#questions)
 
   ## Description
   ${input.description}
@@ -35,8 +35,10 @@ function generateMarkdown(input) {
   ## Tests 
   ${input.tests}
   ## Questions 
-  ${input.github}
-  ${input.email} `;
+  Please reach out to me at ${input.email} if you have any questions.
+  
+  Follow my Github account at ${input.github}.
+   `;
 }
 
 module.exports = generateMarkdown;
